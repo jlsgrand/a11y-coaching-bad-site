@@ -1,0 +1,100 @@
+html {
+    background-color: #d0d0d0;
+    color: dimgrey
+}
+
+body {
+    margin: 0 auto;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+        'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+        sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    text-align: center;
+
+    width: 70vw;
+}
+
+img {
+    max-width: 40vw;
+    max-height: 30vh;
+    border-radius: 1rem;
+}
+
+table {
+    margin: 1rem auto;
+}
+
+.header {
+    background-color: #282c34;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    color: white;
+
+    margin-bottom: 1rem;
+    padding: 1rem;
+
+    border-radius: 0 0 0.5rem 0.5rem;
+}
+
+.img-text-aside {
+    display: flex;
+    margin: 1rem;
+}
+
+.img-text-aside aside {
+    text-align: left;
+    margin: 1rem;
+}
+
+.hidden {
+    display: none;
+}
+
+[role="alertdialog"],
+[role="dialog"] {
+    margin: 1rem;
+    padding: 1rem;
+    border: 2px solid #000;
+    background-color: #fff;
+    z-index: 10;
+    box-shadow: 0 1rem 2rem rgb(0 0 0 / 12%), 0 1rem 1rem rgb(0 0 0 / 22%);
+}
+
+/* this is added to the body when a dialog is open */
+.has-dialog {
+    overflow: hidden;
+}
+
+/* native <dialog> element uses the ::backdrop pseudo-element */
+/* dialog::backdrop, */
+.dialog-backdrop {
+    display: none;
+    position: fixed;
+    overflow-y: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgb(0 0 0 / 50%);
+}
+
+.dialog-backdrop.active {
+    display: block;
+}
+
+.form-field {
+    display: flex;
+    justify-content: space-around;
+}
+
+@media screen and (max-width: 420px) {
+    /* Problème pour la linéarisation du contenu */
+    img {
+        max-width: 100vw;
+    }
+}

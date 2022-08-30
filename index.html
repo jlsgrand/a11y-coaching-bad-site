@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="header">
+        <h3>🏋️‍♀️ J'adore la muscu 🏋️‍♂️</h3>
+        <p>Salut à tous et bienvenue sur mon site, ici je vous propose quelques conseils sur la muscu et sur la
+            nutrition. Eh oui, la muscu sans nutrition, ça sert à rien 😋.</p>
+    </div>
+
+    <div class="section">
+        <h4>Présentation</h4>
+        <div class="img-text-aside">
+            <img src="assets/moi.jpg" alt="Moi qui fait du curl">
+            <aside>
+                <p>Salut moi c'est John, je suis un champion de muscu et vous pouvez le devenir aussi ! Ne vous moquez
+                    pas trop vite de moi, je ne suis pas un gros débile qui passe 100% de son temps à la salle à mater
+                    mes biceps. La preuve, vous êtes sur mon site web que j'ai codé avec mes petites mains musclées !
+                </p>
+                <p>J'adore partager mon expérience et je vois tellement de personnes qui galèrent à la salle que j'ai
+                    décidé ce partager mon XP sur le net ! J'espère que ça vous plaira. Si oui, n'hésitez pas à vous
+                    inscrire à ma newsletter <a href="#newsletter">ici</a> pour avoir toujours des nouvelles fraiches.
+                </p>
+
+            </aside>
+        </div>
+    </div>
+
+    <div class="section">
+        <h4>Conseils</h4>
+        <h6>A la salle</h6>
+        <div class="img-text-aside">
+            <img src="assets/salle.jpg">
+            <aside>
+
+                <ul>
+                    <p>Soulever lourd</p>
+                    <p>Soulever longtemps</p>
+                    <p>Soulever beaucoup</p>
+                </ul>
+            </aside>
+        </div>
+
+        <h6>A la maison</h6>
+        <div class="img-text-aside">
+
+            <img src="assets/maison.jpg" alt="La bonne assiette !">
+            <aside>
+
+                <ul>
+                    <p>Manger beaucoup</p>
+                    <p>Manger souvent ⏱</p>
+                    <p>Et surtout de la prot' 🍗🥩</p>
+                </ul>
+            </aside>
+        </div>
+    </div>
+
+    <h4>Les aliments bruts les plus riches en protéines !</h4>
+    <p>Je suis sur que vous galérez surement à manger assez de protéines pour prendre des maxi muscles, mais pas de
+        panique, j'ai une source d'information incroyable pour vous permettre de maximiser vos gains !</p>
+    <button id="btn-open-dialog">Découvrez ici !</button>
+
+    <div role="dialog" id="prot-dialog" class="hidden">
+        <h2 id="prot-dialog-label">
+            Liste des aliments bruts les plus riches en protéines
+        </h2>
+
+        <table>
+            <tr>
+                <td><b>Aliment</b></td>
+                <td><b>Teneur moyenne (g/100g)</b></td>
+            </tr>
+            <tr>
+                <td>Oeuf, blanc (blanc d'oeuf), en poudre</td>
+                <td>81,2</td>
+            </tr>
+            <tr>
+                <td>Spiruline (Spirulina sp.), séchée ou déshydratée</td>
+                <td>57,5</td>
+            </tr>
+            <tr>
+                <td>Oeuf, en poudre</td>
+                <td>47,9</td>
+            </tr>
+            <tr>
+                <td>Morue, salée, sèche</td>
+                <td>47,6</td>
+            </tr>
+            <tr>
+                <td>Boeuf, joue, braisée ou bouillie</td>
+                <td>39,2</td>
+            </tr>
+            <tr>
+                <td>Farine de soja</td>
+                <td>39,2</td>
+            </tr>
+            <tr>
+                <td>Viande des Grisons</td>
+                <td>38,9</td>
+            </tr>
+            <tr>
+                <td>Soja, graine entière</td>
+                <td>37,8</td>
+            </tr>
+            <tr>
+                <td>Veau, jarret, braisé ou bouilli</td>
+                <td>37,4</td>
+            </tr>
+            <tr>
+                <td>Boeuf, plat de côtes, braisé</td>
+                <td>37,3</td>
+            </tr>
+            <tr>
+                <td>Porc, rouelle de jambon, cuite</td>
+                <td>36,9</td>
+            </tr>
+            <tr>
+                <td>Boeuf, paleron, braisé ou bouilli</td>
+                <td>36,8</td>
+            </tr>
+            <tr>
+                <td>Veau, épaule, braisée ou bouillie</td>
+                <td>36,4</td>
+            </tr>
+            <tr>
+                <td>Lupin, graine crue</td>
+                <td>36,2</td>
+            </tr>
+            <tr>
+                <td></td>
+        </table>
+
+        <button id="btn-close-dialog">
+            Fermer la boite de dialogue
+        </button>
+
+    </div>
+
+    <p>Source : Ciqual (ANSES) 👉 <a
+            href="https://ciqual.anses.fr/#/constituants/25003/proteines-n-x-6.25-(g-100-g)">ici</a></p>
+
+    <h6 id="newsletter">S'inscrire à la newsletter</h6>
+    <button id="litige-button">S'inscrire à la newsletter</button>
+    <form id="newsletter-form">
+        <h3>Vos coordonnées</h3>
+        <div class="form-field">
+            <span>Nom</span>
+            <input type="text" id="nom-input" required>
+        </div>
+
+        <div class="form-field">
+            <span>Prénom</span>
+            <input type="text" id="prenom-input" required>
+        </div>
+
+        <div class="form-field">
+            <span for="email-input">Adresse mail</span>
+            <input type="text" id="email-input" required>
+        </div>
+
+        <h3>Votre utilisation du site</h3>
+        <div>
+            <input type="checkbox" id="travail-input-checkbox">
+            <label for="travail-input-checkbox">pour la muscu</label>
+        </div>
+        <div>
+            <input type="checkbox" id="loisirs-input-checkbox">
+            <label for="loisirs-input-checkbox">pour la nutrition</label>
+        </div>
+        <div>
+            <input type="checkbox" id="quotidien-input-checkbox">
+            <label for="quotidien-input-checkbox">pour l'accessibilité</label>
+        </div>
+
+        <button type="submit">Me suivre</button>
+    </form>
+
+    <script src="js/aria.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
